@@ -1,0 +1,140 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px 20px;
+}
+
+.card-wrapper {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  margin: 0 auto 16px auto;
+  position: relative;
+}
+
+.card-wrapper::before {
+  content: "";
+  background: url(../media/images/card-background-shape.svg);
+  background-size: contain;
+  background-position: top right;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.visa-card {
+  background-color: #01c9c7;
+}
+
+.visa-card::before {
+  opacity: 0.07;
+}
+
+.mastercard-card {
+  background-color: #3b058e;
+}
+
+.mastercard-card::before {
+  opacity: 0.7;
+}
+
+.visa {
+  content: url('../media/images/visa-logo.svg');
+}
+
+.mastercard {
+  content: url('../media/images/mastercard-logo.svg');
+}
+
+.card-wrapper .card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 24px 0 24px;
+  position: relative;
+}
+
+.card-wrapper .card-top .banking-logo {
+  width: 100%;
+  max-width: 40px;
+  display: inline-block;
+}
+
+.card-wrapper .card-top .card-top-right {
+  width: 60%;
+  text-align: right;
+}
+
+.card-wrapper .card-top .card-top-right h5 {
+  color: #b5add0;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 10px;
+  display: inline-block;
+}
+
+.card-wrapper.visa-card .card-top .card-top-right h5 {
+  color: #1A212C;
+}
+
+#visa .card-top .card-top-right h5 {
+  color: #1A212C;
+}
+
+.card-wrapper .card-top .card-top-right span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 900;
+  display: block;
+}
+
+.card-wrapper .card-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 24px;
+  position: relative;
+}
+
+.card-wrapper .card-bottom .card-bottom-left {
+  width: 70%;
+  text-align: left;
+}
+
+.card-wrapper .card-bottom h3 {
+  color: #fff;
+  font-weight: 900;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+#visa .card-bottom p {
+  color: #1A212C;
+}
+
+.card-wrapper .card-bottom p {
+  color: #fff;
+  margin: 10px 0 0;
+}
+
+.card-wrapper.visa-card .card-bottom p {
+  color: #1A212C;
+}
+
+.card-wrapper .card-bottom .edit-icon {
+  width: 100%;
+  max-width: 20px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+}

@@ -1,0 +1,86 @@
+.App {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.font-face-lineto {
+  font-family: "lineto";
+ }
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 10px;
+}
+
+p, span {
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px 0;
+  display: block;
+}
+
+.btn-add {
+  background-color: #4c00c2;
+  margin: 56px auto 0 auto;
+}
+
+.btn-submit {
+  background-color: #4c00c2;
+  margin: 56px auto 0 auto;
+}
+
+.btn-disable {
+  background-color: #E5E5E5;
+  color: #fff;
+  margin: 56px auto 0 auto;
+}
+
+.btn-delete {
+  margin: 32px auto 56px auto;
+  color: #E5E5E5;
+}
+
+.btn-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  z-index: 2;
+  color: #1A212C;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.error {
+  color: #FC484C;
+}
+
+.valid {
+  color: #19AC51;
+}

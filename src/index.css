@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 15px;
+  background: #E5E5E5;
+}
+
+@font-face {
+  font-family: "lineto";
+  src: local("lineto"), url("../src/media/fonts/lineto-circular-pro-book.woff") format("woff");
+}
